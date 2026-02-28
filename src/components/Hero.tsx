@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* Subtext */}
         <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Lumos helps small and medium businesses cut through the AI hype —
+          Lumos helps businesses cut through the AI hype —
           designing, building, and training you on Claude-powered workflows
           that save real time and create real results.
         </p>
