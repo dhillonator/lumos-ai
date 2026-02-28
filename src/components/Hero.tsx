@@ -18,7 +18,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center pt-20 md:pt-0">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center pt-20 pb-40 md:pt-0 md:pb-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-lumos-purple/30 bg-lumos-purple/10 text-lumos-purple-light text-sm font-medium mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-lumos-purple-light animate-pulse" />
@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-cream to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 md:h-32 bg-gradient-to-t from-cream to-transparent" />
     </section>
   );
 }
