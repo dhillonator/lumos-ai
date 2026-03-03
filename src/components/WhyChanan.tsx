@@ -1,4 +1,4 @@
-export default function WhyLumos() {
+export default function WhyChanan() {
   const reasons = [
     {
       title: "Built on Claude — the safest AI",
@@ -29,7 +29,7 @@ export default function WhyLumos() {
           {/* Left: Content */}
           <div>
             <p className="text-lumos-purple font-semibold text-sm uppercase tracking-wider mb-3">
-              Why Lumos
+              Why Chanan
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy mb-6">
               Most AI consultants
@@ -38,7 +38,7 @@ export default function WhyLumos() {
               <span className="text-gradient">We sell results.</span>
             </h2>
             <p className="text-gray-500 text-lg leading-relaxed mb-10">
-              Lumos was founded to bridge the gap between what AI can do and what
+              Chanan Consulting was founded to bridge the gap between what AI can do and what
               small businesses actually experience. We&apos;ve seen too many SMBs waste
               time on tools that don&apos;t fit — and we exist to change that.
             </p>

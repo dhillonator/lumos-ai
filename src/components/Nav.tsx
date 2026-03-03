@@ -36,9 +36,9 @@ export default function Nav() {
           }`}
         >
           <span className="w-7 h-7 rounded-lg bg-lumos-purple flex items-center justify-center text-white text-sm font-bold">
-            L
+            C
           </span>
-          Lumos
+          Chanan Consulting
         </a>
 
         {/* Desktop Links */}

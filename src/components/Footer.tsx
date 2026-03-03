@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-8 h-8 rounded-lg bg-lumos-purple flex items-center justify-center text-white font-bold text-sm">
-                L
+                C
               </span>
-              <span className="text-white font-bold text-lg">Lumos</span>
+              <span className="text-white font-bold text-lg">Chanan Consulting</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-xs">
               AI consulting for growing businesses. We help you adopt Claude and
@@ -50,7 +50,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {[
                 { label: "How It Works", href: "#process" },
-                { label: "Why Lumos", href: "#about" },
+                { label: "Why Chanan", href: "#about" },
                 { label: "Contact", href: "#contact" },
               ].map((item) => (
                 <li key={item.label}>
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs">
-            © {year} Lumos AI Consulting. All rights reserved.
+            © {year} Chanan Consulting. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">
             Powered by{" "}

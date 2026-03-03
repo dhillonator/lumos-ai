@@ -32,14 +32,14 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Lumos Contact Form <onboarding@resend.dev>",
+        from: "Chanan Consulting Contact Form <onboarding@resend.dev>",
         to: ["dhillon_amardeep@outlook.com"],
         reply_to: email,
         subject: `New inquiry from ${name}${company ? ` at ${company}` : ""}`,
         html: `
           <div style="font-family: Inter, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
             <div style="background: linear-gradient(135deg, #7C3AED, #0F0E17); padding: 32px; border-radius: 12px; margin-bottom: 32px;">
-              <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">New Lumos Inquiry</h1>
+              <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 700;">New Chanan Consulting Inquiry</h1>
               <p style="color: rgba(255,255,255,0.7); margin: 8px 0 0;">Someone wants to work with you</p>
             </div>
 
@@ -76,7 +76,7 @@ export async function POST(req: NextRequest) {
             </div>
 
             <div style="margin-top: 32px; text-align: center; color: #9CA3AF; font-size: 12px;">
-              <p>Sent via Lumos contact form · lumosai.ca</p>
+              <p>Sent via Chanan Consulting contact form · chananconsulting.com</p>
             </div>
           </div>
         `,

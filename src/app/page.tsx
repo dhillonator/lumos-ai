@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
-import WhyLumos from "@/components/WhyLumos";
+import WhyChanan from "@/components/WhyChanan";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Process />
-      <WhyLumos />
+      <WhyChanan />
       <Contact />
       <Footer />
     </main>
