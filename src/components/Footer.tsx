@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -8,8 +10,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <span className="w-6 h-6 bg-parchment text-charcoal flex items-center justify-center text-xs font-bold font-sans">
-                CC
+              <span className="bg-parchment rounded px-2 py-1 flex items-center">
+                <Image src="/logo.png" alt="CC" width={64} height={26} className="h-6 w-auto" />
               </span>
               <span className="text-parchment font-sans font-semibold text-sm">Chanan Consulting</span>
             </div>
