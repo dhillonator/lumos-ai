@@ -9,37 +9,33 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: {
-          DEFAULT: "#FAF9F6",
-          dark: "#F0EDE6",
+        parchment: {
+          DEFAULT: "#F7F4EF",
+          dark: "#EDE9E1",
         },
-        navy: {
-          DEFAULT: "#0F0E17",
-          light: "#1a1928",
+        ink: {
+          DEFAULT: "#1C1917",
+          light: "#44403C",
+          muted: "#78716C",
         },
-        lumos: {
-          purple: "#7C3AED",
-          "purple-light": "#A78BFA",
-          "purple-glow": "#6D28D9",
-          coral: "#F97316",
-          "coral-light": "#FB923C",
+        amber: {
+          DEFAULT: "#A05C34",
+          light: "#D97706",
+          pale: "#FEF9F0",
         },
+        charcoal: {
+          DEFAULT: "#292524",
+          dark: "#1C1917",
+        },
+        stone: "#D6D3D1",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-      },
-      backgroundImage: {
-        "hero-gradient":
-          "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124,58,237,0.35) 0%, transparent 70%), linear-gradient(to bottom, #0F0E17, #1a1928)",
-        "purple-glow":
-          "radial-gradient(ellipse at center, rgba(124,58,237,0.2) 0%, transparent 70%)",
-        "card-gradient":
-          "linear-gradient(135deg, rgba(124,58,237,0.08) 0%, rgba(167,139,250,0.04) 100%)",
+        serif: ["var(--font-lora)", "Georgia", "serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",
         "fade-in": "fadeIn 0.5s ease-out forwards",
-        float: "float 6s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -49,10 +45,6 @@ const config: Config = {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-12px)" },
         },
       },
     },

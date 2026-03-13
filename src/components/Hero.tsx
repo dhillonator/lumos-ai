@@ -2,82 +2,79 @@
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero-gradient">
-      {/* Ambient glow orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-lumos-purple opacity-10 blur-[120px]" />
-        <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] rounded-full bg-lumos-coral opacity-8 blur-[100px]" />
-        {/* Subtle grid */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(167,139,250,1) 1px, transparent 1px), linear-gradient(90deg, rgba(167,139,250,1) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
+    <section className="bg-parchment min-h-screen flex items-center">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full pt-28 pb-20">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-start">
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-12 text-center pt-20 pb-40 md:pt-0 md:pb-16">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-lumos-purple/30 bg-lumos-purple/10 text-lumos-purple-light text-sm font-medium mb-8">
-          <span className="w-1.5 h-1.5 rounded-full bg-lumos-purple-light animate-pulse" />
-          Vancouver · Canada · Worldwide
-        </div>
+          {/* Left: Main content */}
+          <div className="lg:col-span-8">
+            <p className="section-label mb-10">Vancouver · Canada · Worldwide</p>
 
-        {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-6">
-          AI that actually works
-          <br />
-          <span className="text-gradient-light">for your business</span>
-        </h1>
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-[4.5rem] text-ink leading-[1.06] tracking-tight mb-7">
+              AI that actually works
+              <br />
+              <em className="text-amber not-italic">for your business</em>
+            </h1>
 
-        {/* Subtext */}
-        <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Chanan Consulting helps businesses cut through the AI hype —
-          designing, building, and training you on Claude-powered workflows
-          that save real time and create real results.
-        </p>
+            <p className="text-ink-muted text-lg leading-relaxed max-w-xl mb-10">
+              Chanan Consulting helps businesses cut through the AI hype —
+              designing, building, and training you on Claude-powered workflows
+              that save real time and create real results.
+            </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
-            className="px-8 py-3.5 bg-lumos-purple hover:bg-lumos-purple-glow text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-lumos-purple/25 hover:-translate-y-0.5"
-          >
-            Book a Free Consultation
-          </a>
-          <a
-            href="#services"
-            className="px-8 py-3.5 border border-white/20 hover:border-white/40 text-white font-semibold rounded-xl transition-all hover:bg-white/5 backdrop-blur-sm"
-          >
-            See Our Services
-          </a>
-        </div>
+            <div className="flex flex-col sm:flex-row items-start gap-4 mb-14">
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-ink text-parchment text-sm font-medium rounded hover:bg-ink-light transition-colors"
+              >
+                Book a Free Consultation
+              </a>
+              <a
+                href="#services"
+                className="flex items-center gap-2 text-sm font-medium text-ink-muted hover:text-ink transition-colors py-3"
+              >
+                See Our Services
+                <span aria-hidden>→</span>
+              </a>
+            </div>
 
-        {/* Social proof strip */}
-        <div className="mt-16 mb-12 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-white/70 text-sm">
-          <div className="flex items-center gap-2">
-            <svg className="w-4 h-4 text-lumos-purple-light" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            No AI background required
+            <div className="flex flex-wrap gap-x-8 gap-y-2 text-xs text-ink-muted font-sans">
+              <span>No AI background required</span>
+              <span className="text-stone hidden sm:inline">·</span>
+              <span>Powered by Claude (Anthropic)</span>
+              <span className="text-stone hidden sm:inline">·</span>
+              <span>Results in weeks, not months</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-4 h-4 text-lumos-purple-light" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Powered by Claude (Anthropic)
+
+          {/* Right: Editorial aside */}
+          <div className="hidden lg:block lg:col-span-4 pt-4">
+            <div className="border-l border-stone pl-8">
+              <p className="text-xs uppercase tracking-widest text-ink-muted mb-6 font-sans">
+                What we do
+              </p>
+              <ul className="space-y-5">
+                {["AI Strategy", "Implementation", "Team Training", "Ongoing Support"].map((s) => (
+                  <li key={s} className="flex items-center gap-3 text-sm text-ink-light font-medium">
+                    <span className="w-4 h-px bg-amber flex-shrink-0" />
+                    {s}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-12 pt-8 border-t border-stone">
+                <blockquote className="font-serif text-2xl text-ink leading-snug mb-3">
+                  &ldquo;Results in weeks,
+                  <br />
+                  not months.&rdquo;
+                </blockquote>
+                <p className="text-xs text-ink-muted font-sans">Chanan Consulting</p>
+              </div>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-4 h-4 text-lumos-purple-light" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Results in weeks, not months
-          </div>
+
         </div>
       </div>
-
     </section>
   );
 }
